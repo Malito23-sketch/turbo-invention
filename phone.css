@@ -1,0 +1,96 @@
+* {
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #00bfa6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      background: white;
+      width: 280px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .number-display {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    
+    .number-display h2 {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+    .number-display h2 span{
+      color:#949494
+    }
+    
+    .number-display p {
+      color: #949494;
+      font-size: 14px;
+    }
+    
+    .keypad {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    .keypad button {
+      background: #f8f8f8;
+      border: 1px solid #c2c1c1;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    
+    .keypad button span {
+      display: block;
+      font-size: 10px;
+      font-weight: normal;
+      color: #777;
+    }
+    
+    .keypad button:hover {
+      background: #e0e0e0;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    
+    .actions button {
+      border: 1px solid #c2c1c1;
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    .call {
+      background: #0069bf;
+      color: white;
+    }
+    
+    .erase {
+      background: #ececec;
+    }
+    
