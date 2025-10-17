@@ -1,0 +1,157 @@
+:root{
+  --background-color: rgb(173, 40, 133);
+}
+body {
+  background: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.profile-card {
+  background: #fff;
+  width: 350px;
+  height: 93%;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.back-icon {
+  color: #fafafc;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.profile-info {
+  background: rgba(170, 32, 129, 0.356);
+  color: white;
+  border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.profile-info img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-top: 20px;
+}
+
+.profile-info h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.profile-info p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.follow-btn {
+  margin-top: 10px;
+  background: #ec09b3;
+  color: #fafafa;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.follow-btn:hover {
+  background: #f3f3f3;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #fdd835;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.stats h3 {
+  margin: 0;
+  color: #222;
+}
+
+.stats p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+.tabs span {
+  cursor: pointer;
+  color: #777;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.tabs .active {
+  color: #f115e6;
+  font-weight: 600;
+}
+
+.tabs .active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: #7a2baf;
+  border-radius: 5px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  height: 100px;
+}
